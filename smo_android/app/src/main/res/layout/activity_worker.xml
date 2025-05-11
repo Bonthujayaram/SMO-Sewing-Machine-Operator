@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".WorkerActivity">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Worker!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/button_text"
+        android:textColor="@color/icon_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Machine ID Label -->
+    <TextView
+        android:id="@+id/machineIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Machine ID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Machine ID Input (Non-editable) -->
+    <EditText
+        android:id="@+id/machineIdInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Scan Machine ID"
+        android:textSize="16sp"
+        android:background="@drawable/edittext1"
+        android:padding="12dp"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:longClickable="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/machineIdLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/scanMachineIdButton"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Scan Machine ID Button -->
+    <Button
+        android:id="@+id/scanMachineIdButton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#F5F5F5"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:textSize="12dp"
+        app:layout_constraintTop_toTopOf="@id/machineIdInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Job ID Label -->
+    <TextView
+        android:id="@+id/jobIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job ID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/machineIdInput"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Job ID Input (Non-editable) -->
+    <EditText
+        android:id="@+id/jobIdInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Scan Job ID"
+        android:textSize="16sp"
+        android:background="@drawable/edittext1"
+        android:padding="12dp"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:longClickable="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/jobIdLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/scanJobIdButton"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Scan Job ID Button -->
+    <Button
+        android:id="@+id/scanJobIdButton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:textSize="12dp"
+        android:backgroundTint="@color/button_text"
+        android:textColor="@color/icon_color"
+        android:elevation="4dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/jobIdInput"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Reset"
+        android:textSize="20dp"
+        android:backgroundTint="@color/button_text"
+        android:textColor="@color/icon_color"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/jobIdInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/button_text"
+        android:textColor="@color/icon_color"
+        android:elevation="6dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/resetButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Background Colors -->
+    <color name="background_color">#F5F5F5</color>  <!-- Light Gray -->
+
+    <!-- Text Colors -->
+
+    <color name="holo_blue_dark">#FF0000FF</color> <!-- Dark blue color -->
+    <color name="holo_blue_light">#FF00BFFF</color> <!-- Light blue color -->
+
+    <color name="primary_text">#333333</color>  <!-- Dark Gray -->
+    <color name="secondary_text">#555555</color>  <!-- Medium Dark Gray -->
+
+    <!-- Button Colors -->
+    <color name="primary_button">#1E88E5</color>  <!-- Deep Blue -->
+    <color name="secondary_button">#42A5F5</color>  <!-- Medium Blue -->
+
+    <!-- Other UI Elements -->
+    <color name="machine_text">#1E88E5</color>  <!-- Blue for selected machine text -->
+    <color name="edittext_text">#333333</color>  <!-- EditText text color -->
+
+    <!-- Button Text Colors -->
+    <color name="button_text">@android:color/white</color>  <!-- White text for buttons -->
+
+    <!-- Icon Colors -->
+    <color name="icon_color">@android:color/black</color>  <!-- Black icons -->
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/overall_dashboard"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Overall DashBoard" />
+        <item
+            android:id="@+id/worker_dashboard"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Worker Dashboard" />
+        <item
+            android:id="@+id/machine_dashboard"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Machine Dashboard" />
+        <item
+            android:id="@+id/job_dashboard"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Job Dashboard" />
+        <item
+            android:id="@+id/back_button"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Back to Orders" />
+    </group>
+</menu>

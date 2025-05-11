@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Centered Heading Text -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHeading"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Cutting Section"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CardView Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="?android:attr/colorBackground"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- QR ID Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJobIdLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qr ID"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- QR ID Input Field with Scan Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/qrid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Scan QR ID"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#8A2BE2"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <!-- Type Label -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTypeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Type Input Field -->
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Type"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Size Label -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSizeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Size Input Field -->
+            <EditText
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Size"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Quantity Label -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvQuantityLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Quantity Input Field -->
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Quantity"
+                android:inputType="number"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Submit and Reset Buttons Side by Side -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:backgroundTint="#8A2BE2"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reset"
+                    android:backgroundTint="#FF5722"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
